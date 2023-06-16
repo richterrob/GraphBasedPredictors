@@ -9,6 +9,7 @@
 #' @param i.nodes Number of known interventions. Default to 0.
 #' @param sparsity Probability of an edge between two nodes. Default to 0.5.
 #' @param reduced.output If \code{TRUE} only the graph is returned. Default is \code{FALSE}.
+#' 
 #' @return A list with entry \code{$graph} for the random graphs edge matrix (diagonal is set to 1) and with entry \code{$interventions} for the vector of indices for the known interventions.
 #'
 
