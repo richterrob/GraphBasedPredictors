@@ -1,10 +1,12 @@
 
-#' Simulate a spanning tree
+#' Modified Version of the RST
 #'
-#' Simulates a spanning tree in a given directed graph.
+#' Simulates a spanning tree via the modified version of an RST (see "Improved baselines for causal structure learning on interventional data") 
+#' in a given directed graph.
 #'
 #' @param graph Binary graph where a spanning tree needs to be simulated on.
 #' @param start.node Root node of the spanning tree.
+#'
 #' @return spanning tree.
 #'
 
