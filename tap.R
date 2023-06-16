@@ -1,5 +1,5 @@
 
-#' TAP
+#' Transitivity Assuming Predictor (TAP)
 #'
 #' Simulating the graph-based predictor, as a baseline for causal structure learning, TAP (TAP-q) by rejection sampling as detailed in Algorithm 1 of
 #' "Improved baselines for causal structure learning on interventional data".
