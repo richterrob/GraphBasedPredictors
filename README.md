@@ -1,4 +1,11 @@
 # GraphBasedPredictors
+
+Author: Robin Richter
+
+Institution: Deutsches Zentrum für Neurodegenerative Erkrankungen (DZNE) e.V.
+
+Licence: MIT Licence
+
 R functions to compute graph based predictors (GBPs) as baselines for causal structural learning as proposed in the paper RSS23:
 
 - The function oip.R computes observed indegree predictors in all it four forms (OIP, T-OIP, P-OIP and P-T-OIP);
