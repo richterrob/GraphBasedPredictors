@@ -2,12 +2,13 @@
 #' Transitive Closure of a Graph
 #'
 #' Computing the Transitive Closure of a Graph with known Edgematrix-Rows.
-#' This code is by far not the most efficient way to compute the transitive closure.
+#' Note: This code is by far not the most efficient way to compute the transitive closure.
 #'
 #' @param G edge matrix of the input graph with diagonal equal to 1.
 #' @param V.i the indices of known rows. Default is NULL.
 #' @param k.closed If NULL the transitive closure is computed, if a number between 1 and number of nodes the corresponding k-reachability graph is computed. Default is NULL.
 #' @param reduced.output If \code{TRUE} only the graph is returned. Default is \code{FALSE}.
+#' 
 #' @return A list with entry \code{$ancestral.graph} for the transitive closure (of k-reachability graph) of \code{G} and \code{$partial.observations}, the same matrix with all non-known rows masked as \code{NA}.
 #' @export
 #'
