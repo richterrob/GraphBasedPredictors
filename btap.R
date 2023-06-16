@@ -1,14 +1,18 @@
 
-#' B-TAP
+#' Biased Transitivity Assuming Predictor (B-TAP)
 #'
-#' Simulating the biased-TAP by Algorithm 2 of [].
+#' Simulating the graph-based predictor, as a baseline for causal structure learning, biased TAP (B-TAP-q) by rejection sampling as detailed in Algorithm 2 of
+#' "Improved baselines for causal structure learning on interventional data".
 #'
 #' @param observations A binary edge matrix with observed and unobserved (filled with \code{NA}) rows.
 #' @param interventions A vector with the indices of the observed rows.
 #' @param nbr.simulations Number of simulations. Default is \code{100}.
 #' @param q Sparsity used to generate random graphs. Default is \code{0.5}.
 #' @param verbose Outputs the iteration number. Default is \code{FALSE}.
-#' @return Prediction matrix approximating the B-SRB (entries withing 0 and 1).
+#'
+#' This function depends on trans_closure_graph(), generate_rnd_graph(), impossible_edges() and enforce_ones().
+#'
+#' @return Prediction matrix approximating the B-TAP (entries withing 0 and 1).
 #' @export
 
 
