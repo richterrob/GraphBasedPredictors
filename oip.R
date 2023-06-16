@@ -9,6 +9,9 @@
 #' @param transitivity.assumed A logical. If \code{TRUE} the T-OIP is computed. Default is \code{FALSE}.
 #' @param transitivity.preprocessed A logical. If \code{TRUE} partial observations are transitively
 #' closed before computing the OIP, or, T-OIP, this yields the P-OIP and P-T-OIP, respectively. Default is \code{FALSE}.
+#' 
+#' This function relies on trans_closure_graph(), generate_rnd_graph() and impossible_edges()
+#' 
 #' @return Prediction matrix given by the OIP, T-OIP, P-OIP or P-T-OIP (entries withing 0 and 1).
 #'
 #' @export
