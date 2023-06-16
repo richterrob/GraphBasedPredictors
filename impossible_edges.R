@@ -8,6 +8,7 @@
 #' @param observations A matrix with observed rows and unobserved rows (filled with NA's).
 #' @param interventions Indices of the observed rows.
 #' @param reduced.output If \code{TRUE} only the graph is returned. Default is \code{FALSE}.
+#' 
 #' @return A list including the resulting \code{$graph} and \code{$enforced.zeros} the matrix indicating by \code{0} all deduced zeros (other entries are \code{1}).
 #'
 
