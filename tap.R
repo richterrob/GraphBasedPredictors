@@ -1,14 +1,18 @@
 
 #' TAP
 #'
-#' Simulating the TAP by rejection sampling as detailed in Algorithm 1 of [].
+#' Simulating the graph-based predictor, as a baseline for causal structure learning, TAP (TAP-q) by rejection sampling as detailed in Algorithm 1 of
+#' "Improved baselines for causal structure learning on interventional data".
 #'
 #' @param observations A binary edge matrix with observed and unobserved (filled with \code{NA}) rows.
 #' @param interventions A vector with the indices of the observed rows.
 #' @param nbr.simulations Number of consistent simulations. Default is \code{100}.
 #' @param q Sparsity used to generate random graphs. Default is \code{0.5}.
 #' @param verbose Outputs the iteration number. Default is \code{FALSE}.
-#' @param k integer for the k-reachability baseline. Default is \code{NULL}.
+#' @param k integer for a k-reachability baseline. Default is \code{NULL}.
+#'
+#' This function depends on trans_closure_graph(), generate_rnd_graph(), impossible_edges(), enforce_zeros_k_reachability().
+#' 
 #' @return Prediction matrix approximating the SRB (entries withing 0 and 1).
 #' @export
 
