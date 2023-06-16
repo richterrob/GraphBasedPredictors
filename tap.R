@@ -12,7 +12,7 @@
 #'
 #' This function depends on trans_closure_graph(), generate_rnd_graph(), impossible_edges().
 #' 
-#' @return Prediction matrix approximating the SRB (entries withing 0 and 1).
+#' @return Prediction matrix approximating the TAP (entries withing 0 and 1).
 #' @export
 
 tap = function(observations,
