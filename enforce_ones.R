@@ -3,11 +3,14 @@
 #'
 #' Simulating spanning trees rooted in the interventional nodes so that one-constraints are satisfied.
 #'
-#' @param graph Graph where ones need to be ensure
+#' @param graph Graph where ones need to be ensured.
 #' @param enforced.zeros Indices of the vectorized edge matrix indicating which entries are deduced to be zero.
 #' @param observations A matrix with observed rows and unobserved rows (filled with NA's).
 #' @param interventions Indices of the observed rows.
 #' @param reduced.output If \code{TRUE} only the graph is returned. Default is \code{FALSE}.
+#'
+#' This function depends on simulate_spanning_tree().
+#'
 #' @return A list including the resulting \code{$graph} and \code{$enforced.ones} the matrix indicating with a \code{1} where ones are simulated (other entries are \code{0})
 #'
 
