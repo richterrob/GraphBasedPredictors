@@ -6,6 +6,8 @@ Institution: Deutsches Zentrum für Neurodegenerative Erkrankungen (DZNE) e.V.
 
 Licence: MIT Licence
 
+Note: Please feel free to ask questions or report bugs.
+
 R functions to compute graph based predictors (GBPs) as baselines for causal structural learning as proposed in the paper RSS23:
 
 - The function oip.R computes observed indegree predictors in all it four forms (OIP, T-OIP, P-OIP and P-T-OIP);
