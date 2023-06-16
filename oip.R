@@ -1,7 +1,8 @@
 
 #' Observed Indegree Predictor (OIP)
 #'
-#' Computing the OIP
+#' Computing the graph-based-predictors, baselines for causal structure learning,
+#' OIP, T-OIP, P-OIP and P-T-OIP of "Improved baselines for causal structure learning on interventional data".
 #'
 #' @param observations A binary edge matrix with observed and unobserved (filled with \code{NA}) rows.
 #' @param interventions A vector with the indices of the observed rows.
