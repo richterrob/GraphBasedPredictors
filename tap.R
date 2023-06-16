@@ -9,9 +9,8 @@
 #' @param nbr.simulations Number of consistent simulations. Default is \code{100}.
 #' @param q Sparsity used to generate random graphs. Default is \code{0.5}.
 #' @param verbose Outputs the iteration number. Default is \code{FALSE}.
-#' @param k integer for a k-reachability baseline. Default is \code{NULL}.
 #'
-#' This function depends on trans_closure_graph(), generate_rnd_graph(), impossible_edges(), enforce_zeros_k_reachability().
+#' This function depends on trans_closure_graph(), generate_rnd_graph(), impossible_edges().
 #' 
 #' @return Prediction matrix approximating the SRB (entries withing 0 and 1).
 #' @export
@@ -21,9 +20,11 @@ tap = function(observations,
                nbr.simulations = 100,
                q = 0.5,
                verbose = FALSE,
-               k = NULL,
                more.info = FALSE){
-
+  
+  # k-reachibility extention is not workable.
+  k = NULL
+  
   G.A.po = observations
   V.i = interventions
   transitivity.preprocessed = TRUE
