@@ -14,4 +14,4 @@ R functions to compute graph based predictors (GBPs) as baselines for causal str
 
 The remaining functions are needed as subroutines.
 
-[RSS23]:  Improved baselines for causal structure learning on interventional data, Statistics and Computing, to appear.
+[RSS23]: R. Richter, S. Bhamidi and S. Mukherjee, Improved baselines for causal structure learning on interventional data, Statistics and Computing, to appear.
